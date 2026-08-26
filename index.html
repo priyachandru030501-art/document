@@ -18,18 +18,16 @@
     }
     .section{
         text-align: center;
+        display:flex;
+        gap: 20px;
     }
     .section-tittle{
-        text-align: center;
+        text-align:center ;
         font-size: 35px;
         margin-bottom: 20px;
         color: blue;
     }
-    .section{
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-    }
+
     .product-card{
         width:300px;
         background-color:aqua;
@@ -80,8 +78,12 @@
     .buy-button:hover{
         background-color: deeppink;
     }
-    
-
+    .info-sectio{
+        display: flex;
+    }
+    .card-container{
+        display: flex;
+    }
 </style>
 <body>
     <h1 class="section-tittle">Dresses</h1>
@@ -146,6 +148,30 @@
                 <button class="buy-button">Buy now</button>
             </div>
         </div>
-    </div>   
+    </div>  
+    <div class="info-section">
+        <h1 class="info title">our vision & mission</h1>
+        <div class="card-container">
+            <div class="infor-card">
+                <div class="info-icon">👁️</div>
+                <h2 class="info tittle">our vision</h2>
+                <p class="info-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, provident. Ab fugiat blanditiis esse ex neque ducimus nemo labore illum voluptates. Nemo, eius cupiditate cum et sed cumque vel aut.</p>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="infor-card">
+                <div class="info-icon">🎯</div>
+                <h2 class="info tittle">our mission</h2>
+                <p class="info-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, provident. Ab fugiat blanditiis esse ex neque ducimus nemo labore illum voluptates. Nemo, eius cupiditate cum et sed cumque vel aut.</p>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="infor-card">
+                <div class="info-icon">✨</div>
+                <h2 class="info tittle">our value</h2>
+                <p class="info-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, provident. Ab fugiat blanditiis esse ex neque ducimus nemo labore illum voluptates. Nemo, eius cupiditate cum et sed cumque vel aut.</p>
+            </div>
+        </div>
+    </div> 
 </body>
 </html>
