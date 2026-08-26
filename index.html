@@ -5,35 +5,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        background-color:antiquewhite;
+        padding: 30px;
+    }
+    .section{
+        text-align: center;
+    }
+    .section-tittle{
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 20px;
+        color: blue;
+    }
+    .section{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    .product-card{
+        width: 200px;
+        background-color:aqua;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 10px royalblue;
+        transition: 0.5s;
+    }
+    .product-card:hover{
+        transform: translate Y(-10Px);
+        box-shadow: 0 5px 5px gray;
+    }
+    .product-card img{
+        width: 100%;
+        height: 200px;
+    }
+    .product-content{
+        padding: 20px;
+    }
+    .product-tittle{
+        font-size: 22px;
+        margin-bottom: 5px;
+    }
+    .rat{
+        margin-bottom: 5px;
+    }
+    .product-description{
+        color: brown;
+        font-size: 15px;
+        line-height: 1.2;
+        margin-bottom: 4px;
+    }
+    .price{
+        font-size: 15px;  
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .buy-button{
+        width:50%;
+        padding: 5px;
+        border-radius: 17px;
+        background-color:coral;
+        font-size: 15px;
+        cursor: pointer;
+        transform: 0.3s;
+        border-color: black;
+    }
+    .buy-button:hover{
+        background-color: deeppink;
+    }
+    
+
+</style>
 <body>
     <h1 class="section-tittle">Dresses</h1>
     <div class="section">
         <div class="product-card">
             <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQbZibeePjjqW-5DoVOn72p56wece0Jw6P6a3RYIqQb4wfGMe7HTIiWyIzbBHMTK3vZDN5FirTLeyikgSQKL5Pl5yjsOr1S0JN-wa6JLb07_3BJazdF8wDMVQ"alt="Girls frock"class="product-image">
             <div class="product-content">
-                <h2 class="product-little">Girls Frock</h2>
+                <h2 class="product-little">Frock</h2>
+                <div class="rat imag">⭐⭐⭐⭐⭐</div>
+                <p class="product-description">Dry Rose Pink Flower Frock with Detachable Lavender Back Trail</p>
+                <div class="price">₹2800</div>
+                <button class="buy-button">Buy now</button>
             </div>
-        </div>
-        <div class="rat imag">⭐⭐⭐⭐⭐</div>
-    <p class="product-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam alias nisi nobis, minus fuga consequuntur quae possimus odio illo, perspiciatis, voluptas impedit quaerat cum corrupti debitis exercitationem id cumque officiis.</p>
-    </div>
-    <div class="section">
+        </div>    
         <div class="product-card">
             <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSlEcn1XMZW32kzvb3FqdG-HKSNYhvR56ALMzJLROfcbRYmfcF1Y46mZ2zhKMg-saANBzqAHkxz-45t86-aU2DsdU_GXdK17-vthEEycCS9hrw7NLNHfYqgiw"alt="Cotton Maxi"class="product-image">
             <div class="product-content">
                 <h2 class="product-little">Cotton Maxi</h2>
+                <div class="rat imag">⭐⭐⭐⭐⭐</div>
+                <p class="product-description">Women's Floral Maxi Dress</p>
+                <div class="price">₹1560</div>
+                <button class="buy-button">Buy now</button>
             </div>
         </div>
-    </div>
-    <div class="section">
         <div class="product-card">
             <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS1GRek8wykCGdcm-RsVoFpSOybR42V4XlK7-trXCbCUiF3pSt92yXZwsnAaq9P6JesteT-W7gAZV0wdl8LsVhmATPv0F0qGfQyfyzY4pwdGxpZRcrJjvIj"alt="Floral Printer Saree"class="product-image">
             <div class="product-content">
                 <h2 class="product-little">Floral Cotton Saree</h2>
+                <div class="rat imag">⭐⭐⭐⭐⭐</div>
+                <p class="product-description">Casual Floral Print Saree</p>
+                <div class="price">₹999</div>
+                <button class="buy-button">Buy now</button>
             </div>
         </div>
-    </div>
-    
-
+        <div class="product-card">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQ7gLhGql2NEE6eChU-wTGcTZ0btbpwTiYsMG3slV8lgmry2NRLv-ohDxS_CVm97fy7JitnaA_bSvpcNWr7TAkx7IiqAtAnkAcNliFJq7U"alt="kurta"class="product-image">
+            <div class="product-content">
+                <h2 class="product-little">Kurta</h2>
+                <div class="rat imag">⭐⭐⭐⭐⭐</div>
+                <p class="product-description">Moda Rapido Women's Floral Printed Kurta</p>
+                <div class="price">₹800</div>
+                <button class="buy-button">Buy now</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQHUE8mYGVD0A_zay2CiCppT0QMAabbrPsnrq2Gap8MnZgr6OTgkXEEHLKRNuTLD9sKYxtt0psY32Nd1MUhQxylc40URe7ZSfIrj5dBaQlnUcp7F2k5fCw07w"alt="Lehenga"class="product-image">
+            <div class="product-content">
+                <h2 class="product-little">Lehenga </h2>
+                <div class="rat imag">⭐⭐⭐⭐⭐</div>
+                <p class="product-description">Fabcartz Women's South Indian Pattu Lehenga Choli</p>
+                <div class="price">₹893</div>
+                <button class="buy-button">Buy now</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTKcAp6ARuzquBvlSDJK1ZowiiaEpQq1kc5fbr9wPZA_8vDjehItzyaGFbNnh9o6h_e9MdrANMsFJ1z3LffSLdKUmtnYyhXObrSfCoRxVQ"alt="printed top and pant"class="product-image">
+            <div class="product-content">
+                <h2 class="product-little">Printed Top </h2>
+                <div class="rat imag">⭐⭐⭐⭐⭐</div>
+                <p class="product-description">Myntra Stylum Printed Top with Trousers</p>
+                <div class="price">₹847</div>
+                <button class="buy-button">Buy now</button>
+            </div>
+        </div>
+    </div>   
 </body>
 </html>
