@@ -78,11 +78,34 @@
     .buy-button:hover{
         background-color: deeppink;
     }
-    .info-sectio{
-        display: flex;
+    .info-section{
+        text-align: center;
+        display:flex;
+        gap: 30px;
+        padding-left: 200px;
+    }
+    .info.title {
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: #1a1a1a;
+        width: 100%;
+        margin-top: 20px;
     }
     .card-container{
-        display: flex;
+        padding: 20px 20px;
+        width:300px;
+        text-align: center;
+        overflow: hidden;
+        background-color:aliceblue;
+        border-radius: 10px;
+        box-shadow: 0 5px 3px royalblue;
+        transition: 0.3s;
+    }
+    .card-container:hover{
+        transform: translateY(-20PX);
+        box-shadow: 0 10px 5px gray;
     }
 </style>
 <body>
@@ -149,8 +172,8 @@
             </div>
         </div>
     </div>  
+    <h1 class="info title">our vision & mission</h1>
     <div class="info-section">
-        <h1 class="info title">our vision & mission</h1>
         <div class="card-container">
             <div class="infor-card">
                 <div class="info-icon">👁️</div>
