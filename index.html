@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CARDS</title>
@@ -14,7 +15,7 @@
     body{
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         background-color:antiquewhite;
-        padding: 30px;
+        padding: 0px;
     }
     .section{
         text-align: center;
@@ -117,9 +118,83 @@
         line-height: 1.2;
         margin-bottom: 4px;
     }
+    .navbar{
+        background-color:aquamarine;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 20px;
+        align-items: center;
+    }
+    .navbar-brand{
+        text-decoration: dashed;
+        font-size:30px;
+        font-weight:bold;
+        color:darkred;
+    }
+    .nav-link{
+        display: flex;
+        gap: 40px;
+        list-style: none;
+    }
+    .nav-link a{
+        font-size: 20px;
+        text-decoration: dashed;
+        color: brown;
 
+    }
+    .nav-link a:hover{
+        color: black;
+        background-color: yellow;
+        border-radius: 5px;
+        padding: 4px 4px;
+    }
+    footer{
+        margin-top: 40px;
+    }
+    .footer-container{
+        background-color: burlywood;
+        padding:10px 10px;
+        justify-content: space-between00;
+        gap: 100px;
+        display: flex;
+    }
+    .footer-column{
+        width: 25%;
+    }
+    .footer-column h2{
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    .footer-column p{
+        line-height: 1;
+        font-size: 15px;
+    }
+    .footer-column ul{
+        display: block;
+    }
+    .footer-column a{
+        display: block;
+        text-align: center;
+    }
+    .footer-bottom{
+        border-top: 1px white;
+        margin-top: 50px;
+        padding-top: 10px;
+        display:block;
+        justify-content: space-between;
+    }
+    
 </style>
 <body>
+    <div class="navbar">
+        <a href="#" class="navbar-brand">women fashion</a>
+        <ul class="nav-link">
+                <li><a href="#">home</a></li>
+                <li><a href="#">menu</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">service</a></li>
+        </ul>
+    </div>
     <h1 class="section-tittle">Dresses</h1>
     <div class="section">
         <div class="product-card">
@@ -206,6 +281,35 @@
                 <p class="info-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, provident. Ab fugiat blanditiis esse ex neque ducimus nemo labore illum voluptates. Nemo, eius cupiditate cum et sed cumque vel aut.</p>
             </div>
         </div>
-    </div> 
+    </div>
+<footer>
+    <div class="footer-container">
+        <div class="footer-column">
+            <h2>WOMEN FASHION</h2>
+            <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis odit nisi tempore quaerat, tenetur minima tempora nulla corrupti vitae dignissimos! Facere vel fugit omnis, rem eligendi dolor at excepturi doloribus.</P>
+
+        </div>
+        <div class="footer-column">
+            <h2>our services</h2>
+            <ul class="nav-link">
+                <li><a href="#">home</a></li>
+                <li><a href="#">menu</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">service</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+           <h2>website</h2>
+           <a href="#"><i class="bi bi-instagram"></i></a>
+           <a href="#"><i class="bi bi-facebook"></i></a>
+           <a href="#"><i class="bi bi-twitter"></i></a>
+           <a href="#"><i class="bi bi-linkedin"></i></a>
+           <a href="#"><i class="bi bi-youtube"></i></a>
+        </div>
+        <div class="footer-bottom">
+            <p>& copy:2023 basic footer all rights reserved</p>
+        </div>
+    </div>
+</footer> 
 </body>
 </html>

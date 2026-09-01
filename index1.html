@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOBILE SHOP</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        background-color:antiquewhite;
+        padding: 0px;
+    }
+    .navbar{
+        background-color:cornflowerblue;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 20px;
+        align-items: center;
+    }
+    .navbar-brand{
+        text-decoration: dashed;
+        font-size:30px;
+        font-weight:bold;
+        color:darkred;
+    }
+    .nav-link{
+        display: flex;
+        gap: 40px;
+        list-style: none;
+    }
+    .nav-link a{
+        font-size: 20px;
+        text-decoration: dashed;
+        color: brown;
+
+    }
+    .nav-link a:hover{
+        color: black;
+        background-color: yellow;
+        border-radius: 5px;
+        padding: 4px 4px;
+    }
+    .hero{
+        height:400px;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        text-align:center;
+        background:linear-gradient(to right,rgba(0, 128, 0, 0.575),rgba(135, 207, 235, 0.707));
+        padding: 10px;    
+    }
+    .hero-content{
+        max-width:700px;
+    }
+    .hero h1{
+        font-size:30px;
+        margin-bottom: 8px;
+        margin-top: 8px;
+        color:brown;
+    }
+    .hero p{
+        font-size: 14px;
+        line-height: 1.3;
+        margin-bottom: 15px;
+    }
+    .hero-button{
+        background-color: rgba(128, 255, 0, 0.536);
+        color:black;
+        padding: 10px 10px;
+        text-decoration:none;
+        border-radius: 10px;    
+    }
+    .hero-button:hover{
+        transform: translateY(-10PX);
+    }
+    .info-section{
+        padding:20px;
+        text-align: center;
+    }
+    .info-section h2{
+        font-size:20px;
+        margin-bottom: 20px;
+    }
+    .info-section p{
+        font-size: large;
+        color:chocolate;
+        margin-bottom: 10px;
+    }
+    .info-cards{
+        display: flex;
+        justify-content: center;
+        gap:20px;
+    }
+    .info-card{
+        width:300px;
+        padding:10px;
+        background-color:darkgray;
+        border:1px solid burlywood;
+        border-radius: 20px;
+    }
+    .info-card:hover{
+        transform: translateY(-10PX)
+    }
+    img{
+        width:400px;
+        padding: 10px;
+    }
+    footer{
+        margin-top: 20px;
+        background-color:darksalmon;
+    }
+    .footer-container{
+        display: flex;
+        gap: 150px;
+        text-align: center;
+        padding: 20px;
+        justify-content: center;    
+    }
+    .footer-column h2{
+        margin-bottom: 20px;
+    }
+    .footer-link{
+        display: block;
+        list-style: none;
+        font-size:larger;
+    }
+    .footer-link a{
+        text-decoration: dashed;
+        color: crimson;
+        line-height: 1.3;
+
+    }
+    .footer-bottom{
+        text-align: center;
+        padding: 50px;
+    }
+    .footer-bottom p{
+        color: rgba(41, 41, 232, 0.96);
+        font-size: larger;
+    }
+</style>
+<body>
+    <div class="navbar">
+        <a href="#" class="navbar-brand">MOBILE SHOP</a>
+        <ul class="nav-link">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Service</a></li>
+        </ul>
+    </div>
+    <section class="hero">
+        <div class="hero-image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCH9Jp6H3kFv6ZxWdKpVgaKjXDvYDF3-C2UQRrbws-yll5jz9p8ZNzigM&s=10"alt="mobile">
+        </div>
+
+        <div class="hero-content">
+            <h1>Mobiles</h1>
+            <p>A mobile phone is a portable electronic device used to make voice calls, send text messages, and connect to wireless telecommunications or cellular networks.</p>
+            <button class="hero-button">Get start</button>
+        </div>
+
+    </section>
+    <section class="info-section">
+        <div class="info-cards">
+            <div class="info-card">
+                <h2>Mobile phone</h2>
+                <p>A mobile phone is an electronic device used to make calls and send messages without wires.</p>
+            </div>
+    
+            <div class="info-card">
+                <h2>Smart phone</h2>
+                <p>A smartphone is an advanced mobile phone used for calling, internet browsing, apps, photos, and videos.</p>
+            </div>
+
+            <div class="info-card">
+                <h2>Mobile Device</h2>
+                <p>A mobile device is a portable electronic device that can be used anywhere for communication and accessing information.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+    <div class="footer-container">
+        <div class="footer-column">
+            <h2>Quick Links</h2>
+          <ul class="footer-link">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+            <h2>Customer Service</h2>
+          <ul class="footer-link">
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Shipping</a></li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>& copy:2026 Mobile Shop all rights reserved</p>
+        </div>
+    </div>
+    </footer>
+    
+</body>
+</html>
