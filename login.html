@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+   
+   body:before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(https://wallpaperaccess.com/full/1209535.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: blur(6px);
+        transform: scale(1.1);
+        z-index: -1;
+    }
+    .container {
+        width: 300px;
+        display: flex;
+        margin: 60px auto;
+        background-color:rgba(238, 137, 54, 0.925);
+        border-radius: 10px;
+        padding: 10px;
+        align-items: center;
+    }
+    .left-section img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .right-section {
+        text-align: center;
+        padding: 30px 40px;
+        font-weight: bold;
+    }
+
+    .right-section h1 {
+        margin-bottom: 30px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 8px;
+        font-weight: normal;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .login-button{
+        background-color:cadetblue;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        border-color: aqua;
+        padding: 10px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    .form-footer {
+        margin-top: 15px;
+    }
+    
+
+   
+</style>
+<body>
+    <div class="container">
+        
+    <section class="right-section">
+            <h1>Login Now</h1>
+            <form>
+                <div class="form-group">
+                    <label for="username">User Name</label>
+                    <input type="text" id="username" placeholder="Enter your username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password">
+                </div>
+                <button type="submit" class="login-button">LOGIN</button>
+                <div class="form-footer">
+                    <p>Don't have an account?</p>
+                    <p><a href="#">Forgot Password?</a></p>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+</body>
+</html>

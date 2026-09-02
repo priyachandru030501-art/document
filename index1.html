@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MOBILE SHOP</title>
+    <title>Login-MOBILE SHOP</title>
 </head>
 <style>
     *{
@@ -47,16 +47,19 @@
         padding: 4px 4px;
     }
     .hero{
-        height:400px;
+        height:600px;
         display: flex;
         justify-content:center;
         align-items: center;
         text-align:center;
-        background:linear-gradient(to right,rgba(0, 128, 0, 0.575),rgba(135, 207, 235, 0.707));
-        padding: 10px;    
+        background-image: url('hugo-agut-tugal-6cdIdu8KkLg-unsplash.jpg');
+        background-size:cover;
+        background-position:center;
+        background-repeat: no-repeat;
+        
     }
     .hero-content{
-        max-width:700px;
+        max-width:500px;
     }
     .hero h1{
         font-size:30px;
@@ -65,9 +68,10 @@
         color:brown;
     }
     .hero p{
-        font-size: 14px;
+        font-size:larger;
         line-height: 1.3;
         margin-bottom: 15px;
+        
     }
     .hero-button{
         background-color: rgba(128, 255, 0, 0.536);
@@ -144,6 +148,15 @@
         color: rgba(41, 41, 232, 0.96);
         font-size: larger;
     }
+    .copyright{
+        text-align: center;
+        border-top: 3px solid blue;
+        margin-top: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: ;
+    }
+    
 </style>
 <body>
     <div class="navbar">
@@ -151,21 +164,18 @@
         <ul class="nav-link">
             <li><a href="#">Home</a></li>
             <li><a href="#">Menu</a></li>
+            <li><a href="Login.html">login</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">Service</a></li>
         </ul>
+        
     </div>
     <section class="hero">
-        <div class="hero-image">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCH9Jp6H3kFv6ZxWdKpVgaKjXDvYDF3-C2UQRrbws-yll5jz9p8ZNzigM&s=10"alt="mobile">
-        </div>
-
         <div class="hero-content">
             <h1>Mobiles</h1>
             <p>A mobile phone is a portable electronic device used to make voice calls, send text messages, and connect to wireless telecommunications or cellular networks.</p>
             <button class="hero-button">Get start</button>
         </div>
-
     </section>
     <section class="info-section">
         <div class="info-cards">
@@ -204,11 +214,8 @@
             <li><a href="#">Shipping</a></li>
           </ul>
         </div>
-        <div class="footer-bottom">
-            <p>& copy:2026 Mobile Shop all rights reserved</p>
-        </div>
     </div>
-    </footer>
-    
+        <p class="copyright">@2026 Mobile Shop all rights reserved</p>
+    </footer>   
 </body>
 </html>
